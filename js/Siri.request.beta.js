@@ -24372,7 +24372,7 @@ $.log(`⚠ FORMAT: ${FORMAT}`, "");
 															break;
 														case keyword.includes("weather") || keyword.includes("天气"):
 															break;
-														case keyword.includes("气压") || keyword.includes("空气压强") || keyword == "pressure" || (keyword.includes("pressure") && (keyword.includes("air") || keyword.includes("barometric") || keyword.includes("atmospheric") || keyword.includes("atmosphere"))):
+														case keyword.includes("气压") || keyword.includes("空气压强") || keyword.includes("压强") || keyword == "pressure" || (keyword.includes("pressure") && (keyword.includes("air") || keyword.includes("barometric") || keyword.includes("atmospheric") || keyword.includes("atmosphere"))):
 															break;
 														case keyword.includes("湿度") || ((keyword.includes("how ") || keyword.includes("air")) && keyword.includes(" wet")) || keyword.includes("humidity"):
 															break;
