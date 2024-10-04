@@ -9,10 +9,6 @@
 #!arguments=CountryCode:US
 #!arguments-desc=CountryCode: 国家或地区代码
 
-[Rule]
-# > Reject distribute 🇨🇳 Siri configuration file
-DOMAIN,api.smoot.apple.cn,REJECT // # 🇨🇳Bag (iOS/macOS)
-
 [Script]
 # Apple.Parsec.Siri.V2Alpha.SiriSearch
 🔍 Siri.SiriSearch.request = type=http-request, pattern=^https?:\/\/(guzzoni|api2|api-.*)\.smoot\.apple\.com\/apple\.parsec\.siri\.v2alpha\.SiriSearch\/SiriSearch, requires-body=1, binary-body-mode=1, engine=webview, debug=1, script-path=https://raw.githubusercontent.com/Asstiff/iRingo/beta/js/Siri.request.beta.js, argument=CountryCode={{{CountryCode}}}
